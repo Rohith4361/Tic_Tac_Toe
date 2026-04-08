@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe — You vs AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="game-wrapper">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Tic Tac Toe</h1>
+      <p>You vs AI &mdash; play smart</p>
+    </div>
+
+    <!-- DIFFICULTY -->
+    <div class="diff-section">
+      <div class="diff-label">Choose difficulty</div>
+      <div class="diff-row">
+        <button class="d-btn easy-btn" data-d="easy">
+          <span class="d-icon">🌿</span>
+          <span class="d-text">Easy</span>
+        </button>
+        <button class="d-btn med-btn active" data-d="med">
+          <span class="d-icon">⚡</span>
+          <span class="d-text">Medium</span>
+        </button>
+        <button class="d-btn hard-btn" data-d="hard">
+          <span class="d-icon">🔥</span>
+          <span class="d-text">Hard</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- LEVEL BADGE -->
+    <div class="level-badge med" id="level-badge">
+      <span id="level-text">⚡ Medium mode</span>
+    </div>
+
+    <!-- SCOREBOARD -->
+    <div class="scoreboard">
+      <div class="score-card you-card active" id="sc-you">
+        <div class="sym">X</div>
+        <div class="name">You</div>
+        <div class="score" id="s-you">0</div>
+      </div>
+      <div class="mid-col">
+        <div class="draw-label">Draws</div>
+        <div class="draw-score" id="s-draw">0</div>
+      </div>
+      <div class="score-card ai-card" id="sc-ai">
+        <div class="sym">O</div>
+        <div class="name">AI</div>
+        <div class="score" id="s-ai">0</div>
+      </div>
+    </div>
+
+    <!-- STATUS -->
+    <div class="status-bar" id="status">Your turn — make a move!</div>
+
+    <!-- BOARD -->
+    <div class="board" id="board"></div>
+
+    <!-- RESULT BANNER -->
+    <div class="result-banner" id="banner"></div>
+
+    <!-- NEW GAME BUTTON -->
+    <button class="new-btn" id="new-btn">New Game</button>
+
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
